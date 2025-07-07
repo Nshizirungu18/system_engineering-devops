@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x directories
+Add script to give execute permission to subdirectories only
