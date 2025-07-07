@@ -1,2 +1,2 @@
 #!/bin/bash
-chown bet root
+su Betty 
