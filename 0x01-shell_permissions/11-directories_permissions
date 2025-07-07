@@ -1,2 +1,2 @@
 #!/bin/bash
-Add script to give execute permission to subdirectories only
+find . -type d -exec chmod ugo+rx {} \+
