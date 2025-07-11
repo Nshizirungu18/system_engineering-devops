@@ -1,4 +1,5 @@
-#!/bin/bash/ env bash
+#!/usr/bin/env bash
+# This script loops from 1 to 10, showing special messages for iterations 4 and 8
 i=1
 while [ $i -le 10 ]
 do
@@ -11,4 +12,3 @@ do
     fi
     i=$((i + 1))
 done
-fi
