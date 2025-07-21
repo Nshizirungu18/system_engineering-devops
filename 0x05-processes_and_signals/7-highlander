@@ -2,12 +2,12 @@
 # A Bash script that displays a message infinitely and handles SIGTERM by displaying a custom message
 
 # Trap SIGTERM signal and respond with a custom message
-trap "echo 'I am invincible!!!'" SIGTERM
+trap "echo 'I am invincible!!!" SIGTERM
 
 # Infinite loop displaying a message every 2 seconds
 while true
 do
-    echo "To infinity and beyond"
+    $echo "To infinity and beyond"
     sleep 2
 done
 cp 6-stop_me_if_you_can 67-stop_me_if_you_can
