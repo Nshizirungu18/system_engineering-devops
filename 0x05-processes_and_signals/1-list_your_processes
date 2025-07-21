@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays a hierarchical, user-oriented list of all running processes including those without a TTY
+
+ps -eo user,pid,ppid,%cpu,%mem,tty,cmd --sort=ppid | less
