@@ -1,8 +1,11 @@
-#!/usr/bin/env bash
-# A Bash script that sends SIGTERM to the 7-highlander process
+#!/bin/bash
 
-pid=$(pgrep -f "7-highlander")
+# Trap SIGTERM signal and respond with a custom message
+trap "echo 'I am invincible!!!'" SIGTERM
 
-if [ -n "$pid" ]; then
-  kill -SIGTERM "$pid"
-fi
+# Infinite loop with message
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
