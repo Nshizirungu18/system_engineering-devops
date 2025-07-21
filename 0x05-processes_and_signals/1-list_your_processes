@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
-# A Bash script that displays a hierarchical, user-oriented list of all running processes including those without a TTY
+#!/bin/bash
 
-ps -eo user,pid,ppid,%cpu,%mem,tty,cmd --sort=ppid | less
+# Display all processes from all users, including those without a TTY
+# Show user, PID, %CPU, %MEM, and command
+# Display process hierarchy using indentation (forest)
+
+ps -e -o user,pid,%cpu,%mem,cmd --forest
