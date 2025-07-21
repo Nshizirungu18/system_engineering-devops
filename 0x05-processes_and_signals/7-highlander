@@ -10,3 +10,8 @@ do
     echo "To infinity and beyond"
     sleep 2
 done
+cp 6-stop_me_if_you_can 67-stop_me_if_you_can
+#!/usr/bin/env bash
+# A Bash script that stops the 7-highlander process by sending a SIGTERM signal
+
+pkill -f 7-highlander
